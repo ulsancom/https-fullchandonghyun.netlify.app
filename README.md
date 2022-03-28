@@ -294,4 +294,142 @@
                                     <button  class="btn btn-default gift-btn gift-send" data-name="믹서기"
                                              onclick="alert('다른분에게 예약된 선물입니다.');"><i
                                             class="fa fa-gift"></i></button>
-                                  
+                                           </div>
+                            </div>
+                            <div class="gift">
+                                <img alt="레고" class="img-fluid gift-img" src="images/gift/lego.png"/>
+                                <img alt="레고" class="img-fluid gift-img gift-selected" src="images/gift/lego.png"/>
+                                <div class="btn-group gift-btn-group" role="group">
+                                    <button class="btn btn-default gift-btn"
+                                            onclick="window.open('https://shop.lego.com/ko-KR/product/10232')"><i
+                                            class="fa fa-search"></i></button>
+                                    <button class="btn btn-default gift-btn gift-send" data-name="레고"
+                                            data-target="#giftMailModal"
+                                            data-toggle="modal"><i
+
+                                             onclick="alert('다른분에게 예약된 선물입니다.');"><i
+                                            class="fa fa-gift"></i></button>
+                                </div>
+                            </div>
+                            <div class="gift">
+                                <img alt="전기레인지" class="img-fluid gift-img" src="images/gift/range.png"/>
+                                <img alt="전기레인지" class="img-fluid gift-img gift-selected" src="images/gift/range.png"/>
+                                <div class="btn-group gift-btn-group" role="group">
+                                    <button class="btn btn-default gift-btn"
+                                            onclick="window.open('https://www.lge.co.kr/lgekor/product/kitchen/electricRange/productDetail.do?cateId=4410&prdId=EPRD.333447')">
+                                        <i class="fa fa-search"></i></button>
+                                    <button class="btn btn-default gift-btn gift-send" data-name="전기레인지"
+                                            data-target="#giftMailModal"
+                                            data-toggle="modal"><i
+
+                                             onclick="alert('다른분에게 예약된 선물입니다.');"><i
+                                            class="fa fa-gift"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ww-section ww-rsvp-detail" id="map">
+            <div class="container">
+                <div class="col text-center">
+                    <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">오시는 길</h2>
+                    <div>
+                        <h5 style="font-family: 'Noto Serif KR', serif;">센텀사이언스파크웨딩홀 23층 스카이홀</h5>
+                        <h6 style="font-family: 'Noto Serif KR', serif;">(부산 해운대구 센텀중앙로 79)</h6>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="my-3 text-center">
+                            <a href="http://naver.me/5pTy3HCa">
+                                <img alt="naver-map" class="map-icon" id="naver-map"
+                                     src="images/map/naver-map.png"/>
+                            </a>
+                            <a href="http://dmaps.kr/2bms8">
+                                <img alt="kakao-map" class="map-icon" id="kakao-map"
+                                     src="images/map/kakao-map.png"/>
+                            </a>
+                            <a href="https://maps.app.goo.gl/jfDxw">
+                                <img alt="google-map" class="map-icon" id="google-map"
+                                     src="images/map/google-map.png"/>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <label style="font-family: 'Noto Serif KR', serif; font-size: 15px;">
+                                셔틀버스 - 센텀시티역 4번출구앞에서 15분 간격으로 운행
+                            </label>
+                        </div>
+                        <div class="my-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.297439052569!2d129.1238775160104!3d35.1741384652207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356892c2513ecf5d%3A0x7d362ece2091e2f8!2z7IS87YWA7IKs7J207Ja47Iqk7YyM7YGsIOy7qOuypOyFmO2ZgA!5e0!3m2!1sko!2skr!4v1554092125630!5m2!1sko!2skr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ww-section bg-light" id="comment">
+            <div class="ww-photo-gallery">
+                <div class="container">
+                    <div class="col text-center">
+                        <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">축하메시지</h2><br>
+                        <div id="comments"></div>
+                        <br>
+                        <div class="row">
+                            <div class="col text-center"><form action="https://github.com/AndersonChoi/wedding-card/blob/master/README.md">
+                                <button class="btn btn-primary btn-submit" type="submit">메시지 남기러 가기</button></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="giftMailModal" role="dialog"
+     tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">선물하기 - <span id="gift-name"></span></h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">보내는 분 성함</span>
+                    </div>
+                    <input aria-describedby="basic-addon3" class="form-control" id="sender-name" type="text">
+                </div>
+                <div class="input-group">
+                    <textarea aria-label="With textarea" class="form-control" id="sender-message"
+                              placeholder="신랑, 신부에게 선물 예약과 함께 보낼 메시지를 입력해주세요. 이 메시지는 신랑, 신부에게 발송됩니다." rows=4></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="reserveGiftButton" type="button">예약</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer></footer>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/ekko-lightbox.min.js"></script>
+<script src="scripts/main.js"></script>
+<div class="bottom_right"><i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>
+</div>
+<div class="bottom_left">
+    <audio id="player" src="mus.mp3"></audio>
+    <div>
+        <i class="fa fa-music fa-2x" onclick="document.getElementById('player').play()"></i>
+    </div>
+</div>
+</body>
+</html>
