@@ -1,1 +1,0 @@
-# fullchandonghyun.netlify.app
